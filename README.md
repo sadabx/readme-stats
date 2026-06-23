@@ -31,14 +31,16 @@ You need a GitHub Personal Access Token (classic) to authenticate API requests. 
 
 ## Usage and API Endpoint Configuration
 
-Replace `<your-netlify-domain>` with your actual Netlify site domain (e.g. `your-project.netlify.app`).
+```markdown
+https://readmestats.netlify.app/api
+```
 
 ### GitHub Stats Card
 
 Generates a card showing your total stars, commits, PRs, issues, and contributions.
 
 ```markdown
-[![GitHub Stats](https://<your-netlify-domain>/api?username=yourusername)](https://github.com/anuraghazra/github-readme-stats)
+[![GitHub Stats](https://readmestats.netlify.app/api?username=sadabx)](https://github.com/sadabx/f1)
 ```
 
 #### Parameters
@@ -55,7 +57,7 @@ Generates a card showing your total stars, commits, PRs, issues, and contributio
 Generates a card displaying your most used programming languages on GitHub.
 
 ```markdown
-[![Top Langs](https://<your-netlify-domain>/api/top-langs?username=yourusername)](https://github.com/anuraghazra/github-readme-stats)
+[![Top Langs](https://readmestats.netlify.app/api/top-langs?username=sadabx)](https://github.com/sadabx/iptv)
 ```
 
 #### Parameters
@@ -69,7 +71,7 @@ Generates a card displaying your most used programming languages on GitHub.
 Generates a card showcasing a specific GitHub repository.
 
 ```markdown
-[![Repo Pin](https://<your-netlify-domain>/api/pin?username=yourusername&repo=your-repo-name)](https://github.com/anuraghazra/github-readme-stats)
+[![Repo Pin](https://readmestats.netlify.app/api/pin?username=sadabx&repo=ManifestHub)](https://github.com/sadabx/ManifestHub)
 ```
 
 #### Parameters
@@ -82,7 +84,7 @@ Generates a card showcasing a specific GitHub repository.
 Displays your programming time tracking stats using WakaTime.
 
 ```markdown
-[![WakaTime Stats](https://<your-netlify-domain>/api/wakatime?username=yourusername)](https://github.com/anuraghazra/github-readme-stats)
+[![WakaTime Stats](https://readmestats.netlify.app/api/wakatime?username=sadabx)](https://github.com/sadabx/fifa)
 ```
 
 #### Parameters
@@ -94,7 +96,7 @@ Displays your programming time tracking stats using WakaTime.
 Displays a card containing stats for a specific GitHub Gist.
 
 ```markdown
-[![Gist Card](https://<your-netlify-domain>/api/gist?id=gist-id)](https://github.com/anuraghazra/github-readme-stats)
+[![Gist Card](https://readmestats.netlify.app/api/gist?id=your-gist-id)](https://github.com/sadabx/readme-stats)
 ```
 
 #### Parameters
