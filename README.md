@@ -1,4 +1,4 @@
-# GitHub Readme Stats (Netlify)
+# GitHub Readme Stats (Vercel)
 
 This repository contains a self-hosted instance of GitHub Readme Stats designed to be deployed on Netlify. It dynamically generates stats cards, language breakdowns, and repository pins to be displayed in your GitHub Profile README.
 
