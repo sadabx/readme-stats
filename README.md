@@ -1,6 +1,6 @@
 # GitHub Readme Stats (Vercel)
 
-This repository contains a self-hosted instance of GitHub Readme Stats designed to be deployed on Netlify. It dynamically generates stats cards, language breakdowns, and repository pins to be displayed in your GitHub Profile README.
+This repository contains a self-hosted instance of GitHub Readme Stats designed to be deployed on Vercel. It dynamically generates stats cards, language breakdowns, and repository pins to be displayed in your GitHub Profile README.
 
 ## Features
 
@@ -14,7 +14,7 @@ This repository contains a self-hosted instance of GitHub Readme Stats designed 
 - High performance caching enabled by default.
 - Custom styling options (themes, colors, fonts, icons).
 
-## Netlify Deployment
+## Vercel Deployment
 
 ### Prerequisite
 
@@ -23,16 +23,16 @@ You need a GitHub Personal Access Token (classic) to authenticate API requests. 
 ### Setup Instructions
 
 1. Push this repository to your GitHub account.
-2. In the Netlify dashboard, click **Add new site** > **Import an existing project**.
+2. In the Vercel dashboard, click **Add New** > **Project**.
 3. Select your repository.
-4. Go to **Site settings** > **Environment variables** > **Add a variable**.
+4. Go to **Settings** > **Environment Variables**.
 5. Create a variable named `PAT_1` and set its value to your GitHub Personal Access Token.
-6. Trigger a deployment. Netlify will deploy the router endpoint automatically.
+6. Deploy the project. Vercel will expose each file in `api/` as a serverless function.
 
 ## Usage and API Endpoint Configuration
 
 ```markdown
-https://readmestats.netlify.app/api
+https://your-project.vercel.app/api
 ```
 
 ### GitHub Stats Card
@@ -40,7 +40,7 @@ https://readmestats.netlify.app/api
 Generates a card showing your total stars, commits, PRs, issues, and contributions.
 
 ```markdown
-[![GitHub Stats](https://readmestats.netlify.app/api?username=sadabx)](https://github.com/sadabx/f1)
+[![GitHub Stats](https://your-project.vercel.app/api?username=sadabx)](https://github.com/sadabx/f1)
 ```
 
 #### Parameters
@@ -57,7 +57,7 @@ Generates a card showing your total stars, commits, PRs, issues, and contributio
 Generates a card displaying your most used programming languages on GitHub.
 
 ```markdown
-[![Top Langs](https://readmestats.netlify.app/api/top-langs?username=sadabx)](https://github.com/sadabx/iptv)
+[![Top Langs](https://your-project.vercel.app/api/top-langs?username=sadabx)](https://github.com/sadabx/iptv)
 ```
 
 #### Parameters
@@ -71,7 +71,7 @@ Generates a card displaying your most used programming languages on GitHub.
 Generates a card showcasing a specific GitHub repository.
 
 ```markdown
-[![Repo Pin](https://readmestats.netlify.app/api/pin?username=sadabx&repo=ManifestHub)](https://github.com/sadabx/ManifestHub)
+[![Repo Pin](https://your-project.vercel.app/api/pin?username=sadabx&repo=ManifestHub)](https://github.com/sadabx/ManifestHub)
 ```
 
 #### Parameters
@@ -84,7 +84,7 @@ Generates a card showcasing a specific GitHub repository.
 Displays your programming time tracking stats using WakaTime.
 
 ```markdown
-[![WakaTime Stats](https://readmestats.netlify.app/api/wakatime?username=sadabx)](https://github.com/sadabx/fifa)
+[![WakaTime Stats](https://your-project.vercel.app/api/wakatime?username=sadabx)](https://github.com/sadabx/fifa)
 ```
 
 #### Parameters
@@ -96,7 +96,7 @@ Displays your programming time tracking stats using WakaTime.
 Displays a card containing stats for a specific GitHub Gist.
 
 ```markdown
-[![Gist Card](https://readmestats.netlify.app/api/gist?id=your-gist-id)](https://github.com/sadabx/readme-stats)
+[![Gist Card](https://your-project.vercel.app/api/gist?id=your-gist-id)](https://github.com/sadabx/readme-stats)
 ```
 
 #### Parameters
